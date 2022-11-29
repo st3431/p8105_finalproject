@@ -1,0 +1,39 @@
+---
+title: "voting data cleaning"
+output: html_document
+date: "2022-11-29"
+---
+
+Cleaning both the Voting 2022 dataset and the Voting 2018 dataset: 
+
+```{r}
+library(tidyverse)
+library(tidyr)
+library(readxl)
+
+voting2022_df =
+  read_xlsx("2022 November General Election.xlsx", sheet = "Turnout Rates", range = "A2:N54") %>%
+  janitor::clean_names() %>% 
+  rename(State = x1, turnout_estimate2022 = preliminary_total_turnout_estimate, TurnoutRate2022 = preliminary_turnout_rate, voting_eligible_pop2022 = voting_eligible_population_vep, voting_age_pop2022 = voting_age_population_vap) %>% 
+  select(State, turnout_estimate2022, TurnoutRate2022, voting_eligible_pop2022, voting_age_pop2022, state_abv)
+
+voting2018_df = 
+    read_xlsx("2018 November General Election.xlsx", sheet = "Turnout Rates", range = "A2:P54") %>%
+  janitor::clean_names() %>%  
+  rename(State = x1, turnout_estimate2018 = estimated_or_actual_2018_total_ballots_counted, TurnoutRate2018 = estimated_or_actual_2018_total_ballots_counted_vep_turnout_rate, voting_eligible_pop2018 = voting_eligible_population_vep, voting_age_pop2018 = voting_age_population_vap) %>% 
+  select(State, turnout_estimate2018, TurnoutRate2018, voting_eligible_pop2018, voting_age_pop2018, state_abv)
+
+```
+
+Merging the datasets: 
+
+```{r}
+voting_df = 
+  full_join(voting2022_df, voting2018_df, by = "state_abv") %>% 
+  select(-State.x) %>% 
+  mutate(turnout_estimate_difference = turnout_estimate2022 - turnout_estimate2018, Turnout_Rate_difference = TurnoutRate2022 - TurnoutRate2018, voting_eligible_difference = voting_eligible_pop2022 - voting_eligible_pop2018, voting_age_difference = voting_age_pop2022 - voting_age_pop2018) %>% 
+  rename(State = State.y)
+
+voting_df <- voting_df[, c(6, 5, 1, 7, 11, 2, 8, 12, 3, 9, 13, 4, 10, 14)]
+```
+
