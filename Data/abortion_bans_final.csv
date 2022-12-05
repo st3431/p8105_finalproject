@@ -1,0 +1,244 @@
+state,state_abv,year,abortion_restricted,threshold
+Alabama,AL,2018,1,20 weeks post-fertilization (22 weeks LMP)
+Alabama,AL,2018,1,Fetal viability
+Alabama,AL,2019,1,20 weeks post-fertilization (22 weeks LMP)
+Alabama,AL,2019,1,Fetal viability
+Alabama,AL,2019,1,Conception
+Alabama,AL,2022,1,Conception
+Alaska,AK,2018,0,None
+Alaska,AK,2022,0,None
+Arizona,AZ,2018,1,18 weeks post-fertilization (20 weeks LMP)
+Arizona,AZ,2018,1,Fetal viability
+Arizona,AZ,2021,1,18 weeks post-fertilization (20 weeks LMP)
+Arizona,AZ,2021,1,Fetal viability
+Arizona,AZ,2022,1,Fetal viability
+Arkansas,AR,2018,1,Fetal heartbeat detected
+Arkansas,AR,2018,1,20 weeks post-fertilization (22 weeks LMP)
+Arkansas,AR,2018,1,Fetal viability
+Arkansas,AR,2019,1,Fetal heartbeat detected
+Arkansas,AR,2019,1,20 weeks post-fertilization (22 weeks LMP)
+Arkansas,AR,2019,1,Fetal viability
+Arkansas,AR,2019,1,16 weeks post-fertilization (18 weeks LMP)
+Arkansas,AR,2020,1,Fetal heartbeat detected
+Arkansas,AR,2020,1,16 weeks post-fertilization (18 weeks LMP)
+Arkansas,AR,2020,1,20 weeks post-fertilization (22 weeks LMP)
+Arkansas,AR,2020,1,Fetal viability
+Arkansas,AR,2021,1,Fetal heartbeat detected
+Arkansas,AR,2021,1,16 weeks post-fertilization (18 weeks LMP)
+Arkansas,AR,2021,1,20 weeks post-fertilization (22 weeks LMP)
+Arkansas,AR,2021,1,Fetal viability
+Arkansas,AR,2021,1,Conception
+Arkansas,AR,2022,1,Conception
+California,CA,2018,1,Fetal viability
+California,CA,2022,1,Fetal viability
+Colorado,CO,2018,0,None
+Colorado,CO,2022,0,None
+Connecticut,CT,2018,1,Fetal viability
+Connecticut,CT,2018,1,3rd trimester
+Connecticut,CT,2022,1,Fetal viability
+Delaware,DE,2018,1,Fetal viability
+Delaware,DE,2021,1,Fetal viability
+Delaware,DE,2022,1,Fetal viability
+District of Columbia,DC,2018,0,None
+District of Columbia,DC,2022,0,None
+Florida,FL,2018,1,Fetal viability
+Florida,FL,2018,1,3rd trimester
+Florida,FL,2020,1,Fetal viability
+Florida,FL,2020,1,3rd trimester
+Florida,FL,2022,1,13 weeks post-fertilization (15 weeks LMP)
+Georgia,GA,2018,1,20 weeks post-fertilization (22 weeks LMP)
+Georgia,GA,2018,1,3rd trimester
+Georgia,GA,2019,1,20 weeks post-fertilization (22 weeks LMP)
+Georgia,GA,2019,1,3rd trimester
+Georgia,GA,2020,1,Fetal heartbeat detected
+Georgia,GA,2020,1,3rd trimester
+Georgia,GA,2022,1,6 weeks post-fertilization (8 weeks LMP)
+Hawaii,HI,2018,0,None
+Hawaii,HI,2022,1,Fetal viability
+Idaho,ID,2018,1,20 weeks post-fertilization (22 weeks LMP)
+Idaho,ID,2019,1,20 weeks post-fertilization (22 weeks LMP)
+Idaho,ID,2020,1,20 weeks post-fertilization (22 weeks LMP)
+Idaho,ID,2021,1,20 weeks post-fertilization (22 weeks LMP)
+Idaho,ID,2022,1,Conception
+Illinois,IL,2018,1,Fetal viability
+Illinois,IL,2019,1,Fetal viability
+Illinois,IL,2022,1,Fetal viability
+Indiana,IN,2018,1,20 weeks post-fertilization (22 weeks LMP)
+Indiana,IN,2018,1,Fetal viability
+Indiana,IN,2019,1,20 weeks post-fertilization (22 weeks LMP)
+Indiana,IN,2019,1,Fetal viability
+Indiana,IN,2021,1,20 weeks post-fertilization (22 weeks LMP)
+Indiana,IN,2021,1,Fetal viability
+Indiana,IN,2022,1,20 weeks post-fertilization (22 weeks LMP)
+Iowa,IA,2018,1,Fetal heartbeat detected
+Iowa,IA,2018,1,20 weeks post-fertilization (22 weeks LMP)
+Iowa,IA,2018,1,3rd trimester
+Iowa,IA,2019,1,Fetal heartbeat detected
+Iowa,IA,2019,1,19 weeks post-fertilization (21 weeks LMP)
+Iowa,IA,2019,1,20 weeks post-fertilization (22 weeks LMP)
+Iowa,IA,2019,1,3rd trimester
+Iowa,IA,2022,1,20 weeks post-fertilization (22 weeks LMP)
+Kansas,KS,2018,1,20 weeks post-fertilization (22 weeks LMP)
+Kansas,KS,2018,1,Fetal viability
+Kansas,KS,2019,1,20 weeks post-fertilization (22 weeks LMP)
+Kansas,KS,2019,1,Fetal viability
+Kansas,KS,2022,1,18 weeks post-fertilization (20 weeks LMP)
+Kentucky,KY,2018,1,20 weeks post-fertilization (22 weeks LMP)
+Kentucky,KY,2018,1,Fetal viability
+Kentucky,KY,2019,1,Fetal heartbeat detected
+Kentucky,KY,2019,1,20 weeks post-fertilization (22 weeks LMP)
+Kentucky,KY,2019,1,Fetal viability
+Kentucky,KY,2020,1,Fetal heartbeat detected
+Kentucky,KY,2020,1,20 weeks post-fertilization (22 weeks LMP)
+Kentucky,KY,2020,1,Fetal viability
+Kentucky,KY,2022,1,Conception
+Louisiana,LA,2018,1,20 weeks post-fertilization (22 weeks LMP)
+Louisiana,LA,2018,1,Fetal viability
+Louisiana,LA,2019,1,20 weeks post-fertilization (22 weeks LMP)
+Louisiana,LA,2019,1,Fetal viability
+Louisiana,LA,2022,1,Conception
+Maine,ME,2018,1,Fetal viability
+Maine,ME,2019,1,Fetal viability
+Maine,ME,2022,1,Fetal viability
+Maryland,MD,2018,1,Fetal viability
+Maryland,MD,2022,1,Fetal viability
+Massachusetts,MA,2018,1,24 weeks post-fertilization (26 weeks LMP)
+Massachusetts,MA,2020,1,24 weeks post-fertilization (26 weeks LMP)
+Massachusetts,MA,2022,1,24 weeks post-fertilization (26 weeks LMP)
+Michigan,MI,2018,0,None
+Michigan,MI,2022,1,Fetal viability
+Minnesota,MN,2018,1,Fetal viability
+Minnesota,MN,2022,1,Fetal viability
+Mississippi,MS,2018,1,13 weeks post-fertilization (15 weeks LMP)
+Mississippi,MS,2018,1,18 weeks post-fertilization (20 weeks LMP)
+Mississippi,MS,2019,1,13 weeks post-fertilization (15 weeks LMP)
+Mississippi,MS,2019,1,18 weeks post-fertilization (20 weeks LMP)
+Mississippi,MS,2019,1,Fetal heartbeat detected
+Mississippi,MS,2020,1,Fetal heartbeat detected
+Mississippi,MS,2020,1,13 weeks post-fertilization (15 weeks LMP)
+Mississippi,MS,2020,1,18 weeks post-fertilization (20 weeks LMP)
+Mississippi,MS,2021,1,Fetal heartbeat detected
+Mississippi,MS,2021,1,13 weeks post-fertilization (15 weeks LMP)
+Mississippi,MS,2021,1,18 weeks post-fertilization (20 weeks LMP)
+Mississippi,MS,2022,1,Conception
+Missouri,MO,2018,1,Fetal viability
+Missouri,MO,2019,1,Fetal viability
+Missouri,MO,2019,1,6 weeks post-fertilization (8 weeks LMP)
+Missouri,MO,2019,1,12 weeks post-fertilization (14 weeks LMP)
+Missouri,MO,2019,1,16 weeks post-fertilization (18 weeks LMP)
+Missouri,MO,2019,1,18 weeks post-fertilization (20 weeks LMP)
+Missouri,MO,2021,1,6 weeks post-fertilization (8 weeks LMP)
+Missouri,MO,2021,1,12 weeks post-fertilization (14 weeks LMP)
+Missouri,MO,2021,1,16 weeks post-fertilization (18 weeks LMP)
+Missouri,MO,2021,1,18 weeks post-fertilization (20 weeks LMP)
+Missouri,MO,2021,1,Fetal viability
+Missouri,MO,2022,1,Conception
+Montana,MT,2018,1,Fetal viability
+Montana,MT,2021,1,bans_gest_fetus_is_capable_of_feeling_pain
+Montana,MT,2022,1,Fetal viability
+Nebraska,NE,2018,1,20 weeks post-fertilization (22 weeks LMP)
+Nebraska,NE,2018,1,Fetal viability
+Nebraska,NE,2020,1,20 weeks post-fertilization (22 weeks LMP)
+Nebraska,NE,2020,1,Fetal viability
+Nebraska,NE,2022,1,20 weeks post-fertilization (22 weeks LMP)
+Nevada,NV,2018,1,Fetal viability
+Nevada,NV,2022,1,24 weeks post-fertilization (26 weeks LMP)
+New Hampshire,NH,2018,0,None
+New Hampshire,NH,2022,1,22 weeks post-fertilization (24 weeks LMP)
+New Jersey,NJ,2018,0,None
+New Jersey,NJ,2022,0,None
+New Mexico,NM,2018,0,None
+New Mexico,NM,2021,0,None
+New Mexico,NM,2022,0,None
+New York,NY,2018,1,24 weeks post-fertilization (26 weeks LMP)
+New York,NY,2019,1,24 weeks post-fertilization (26 weeks LMP)
+New York,NY,2019,1,Fetal viability
+New York,NY,2022,1,Fetal viability
+North Carolina,NC,2018,1,20 weeks post-fertilization (22 weeks LMP)
+North Carolina,NC,2019,1,20 weeks post-fertilization (22 weeks LMP)
+North Carolina,NC,2022,1,20 weeks post-fertilization (22 weeks LMP)
+North Dakota,ND,2018,1,Fetal heartbeat detected
+North Dakota,ND,2018,1,20 weeks post-fertilization (22 weeks LMP)
+North Dakota,ND,2018,1,Fetal viability
+North Dakota,ND,2019,1,Fetal heartbeat detected
+North Dakota,ND,2019,1,20 weeks post-fertilization (22 weeks LMP)
+North Dakota,ND,2019,1,Fetal viability
+North Dakota,ND,2022,1,20 weeks post-fertilization (22 weeks LMP)
+Ohio,OH,2018,1,20 weeks post-fertilization (22 weeks LMP)
+Ohio,OH,2018,1,Fetal viability
+Ohio,OH,2019,1,20 weeks post-fertilization (22 weeks LMP)
+Ohio,OH,2019,1,Fetal viability
+Ohio,OH,2019,1,Fetal heartbeat detected
+Ohio,OH,2021,1,Fetal heartbeat detected
+Ohio,OH,2021,1,20 weeks post-fertilization (22 weeks LMP)
+Ohio,OH,2021,1,Fetal viability
+Ohio,OH,2022,1,20 weeks post-fertilization (22 weeks LMP)
+Oklahoma,OK,2018,1,20 weeks post-fertilization (22 weeks LMP)
+Oklahoma,OK,2018,1,Fetal viability
+Oklahoma,OK,2019,1,20 weeks post-fertilization (22 weeks LMP)
+Oklahoma,OK,2019,1,Fetal viability
+Oklahoma,OK,2022,1,Conception
+Oregon,OR,2018,0,None
+Oregon,OR,2022,0,None
+Pennsylvania,PA,2018,1,24 weeks post-fertilization (26 weeks LMP)
+Pennsylvania,PA,2018,1,Fetal viability
+Pennsylvania,PA,2022,1,22 weeks post-fertilization (24 weeks LMP)
+Rhode Island,RI,2018,1,Fetal viability
+Rhode Island,RI,2018,1,3rd trimester
+Rhode Island,RI,2019,1,3rd trimester
+Rhode Island,RI,2022,1,Fetal viability
+South Carolina,SC,2018,1,20 weeks post-fertilization (22 weeks LMP)
+South Carolina,SC,2021,1,Fetal heartbeat detected
+South Carolina,SC,2021,1,20 weeks post-fertilization (22 weeks LMP)
+South Carolina,SC,2022,1,20 weeks post-fertilization (22 weeks LMP)
+South Dakota,SD,2018,1,bans_gest_fetus_is_capable_of_feeling_pain
+South Dakota,SD,2021,1,bans_gest_fetus_is_capable_of_feeling_pain
+South Dakota,SD,2022,1,Conception
+Tennessee,TN,2018,1,18 weeks post-fertilization (20 weeks LMP)
+Tennessee,TN,2018,1,Fetal viability
+Tennessee,TN,2019,1,18 weeks post-fertilization (20 weeks LMP)
+Tennessee,TN,2019,1,Fetal viability
+Tennessee,TN,2020,1,Fetal heartbeat detected
+Tennessee,TN,2020,1,4 weeks post-fertilization (6 weeks LMP)
+Tennessee,TN,2020,1,6 weeks post-fertilization (8 weeks LMP)
+Tennessee,TN,2020,1,8 weeks post-fertilization (10 weeks LMP)
+Tennessee,TN,2020,1,10 weeks post-fertilization (12 weeks LMP)
+Tennessee,TN,2020,1,13 weeks post-fertilization (15 weeks LMP)
+Tennessee,TN,2020,1,16 weeks post-fertilization (18 weeks LMP)
+Tennessee,TN,2020,1,18 weeks post-fertilization (20 weeks LMP)
+Tennessee,TN,2020,1,19 weeks post-fertilization (21 weeks LMP)
+Tennessee,TN,2020,1,20 weeks post-fertilization (22 weeks LMP)
+Tennessee,TN,2020,1,bans_gest_21_weeks_postfertilization_23_weeks_lmp
+Tennessee,TN,2020,1,bans_gest_22_weeks_postfertilization_24_weeks_lmp
+Tennessee,TN,2020,1,Fetal viability
+Tennessee,TN,2022,1,Conception
+Texas,TX,2018,1,20 weeks post-fertilization (22 weeks LMP)
+Texas,TX,2018,1,3rd trimester
+Texas,TX,2020,1,20 weeks post-fertilization (22 weeks LMP)
+Texas,TX,2020,1,3rd trimester
+Texas,TX,2021,1,Fetal heartbeat detected
+Texas,TX,2021,1,20 weeks post-fertilization (22 weeks LMP)
+Texas,TX,2021,1,3rd trimester
+Texas,TX,2022,1,Conception
+Utah,UT,2018,1,Fetal viability
+Utah,UT,2019,1,Fetal viability
+Utah,UT,2019,1,16 weeks post-fertilization (18 weeks LMP)
+Utah,UT,2020,1,16 weeks post-fertilization (18 weeks LMP)
+Utah,UT,2020,1,Fetal viability
+Utah,UT,2021,1,16 weeks post-fertilization (18 weeks LMP)
+Utah,UT,2021,1,Fetal viability
+Utah,UT,2022,1,16 weeks post-fertilization (18 weeks LMP)
+Vermont,VT,2018,0,None
+Vermont,VT,2022,0,None
+Virginia,VA,2018,1,3rd trimester
+Virginia,VA,2022,1,3rd trimester
+Washington,WA,2018,1,Fetal viability
+Washington,WA,2022,1,Fetal viability
+West Virginia,WV,2018,1,20 weeks post-fertilization (22 weeks LMP)
+West Virginia,WV,2022,1,Conception
+Wisconsin,WI,2018,1,20 weeks post-fertilization (22 weeks LMP)
+Wisconsin,WI,2018,1,Fetal viability
+Wisconsin,WI,2022,1,20 weeks post-fertilization (22 weeks LMP)
+Wyoming,WY,2018,1,Fetal viability
+Wyoming,WY,2021,1,Fetal viability
+Wyoming,WY,2022,1,Fetal viability
