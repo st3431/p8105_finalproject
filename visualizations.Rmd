@@ -1,0 +1,42 @@
+---
+title: "visualizations"
+author: "Ellen Park"
+date: "2022-12-06"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE,
+	fig.height = 6,
+	out.width = "90%",
+	dpi = 200
+)
+setwd("~/COLUMBIA/Fall 2022/DATA SCIENCE/p8105_finalproject")
+```
+
+
+```{r}
+library(tidyverse)
+library(labelled)
+library(modelr)
+library(ggplot2)
+```
+
+
+```{r}
+theme_set(theme_minimal() + theme(legend.position = "bottom"))
+options(
+  ggplot2.continuous.colour = "viridis",
+  ggplot2.continuous.fill = "viridis"
+)
+scale_colour_discrete = scale_colour_viridis_d
+scale_fill_discrete = scale_fill_viridis_d
+```
+
+```{r data}
+
+```
+
