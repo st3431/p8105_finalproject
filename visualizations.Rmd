@@ -14,15 +14,16 @@ knitr::opts_chunk$set(
 	out.width = "90%",
 	dpi = 200
 )
-setwd("~/COLUMBIA/Fall 2022/DATA SCIENCE/p8105_finalproject")
+setwd("~/COLUMBIA/Fall 2022/DATA SCIENCE/p8105_finalproject/Data")
 ```
 
 
 ```{r}
 library(tidyverse)
-library(labelled)
-library(modelr)
 library(ggplot2)
+library(knitr)
+library(lubridate)
+library(ggpubr)
 ```
 
 
@@ -37,6 +38,23 @@ scale_fill_discrete = scale_fill_viridis_d
 ```
 
 ```{r data}
-
+abortion_bans = 
+  read_csv("abortion_bans_final.csv")
+abortion_laws = 
+  read_csv("state_abortion_laws2022.csv")
+voting =
+  read_csv("Voting Turnout - Final.csv")
 ```
 
+```{r}
+voting %>%
+  ggplot(aes(x = state_abv, y = turnout_Rate_difference )) +
+  geom_point() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(
+    title = "Voting Turnout Rate in 2018 vs 2022",
+    x = "State",
+    y = "Rate Difference",
+    caption = "Figure 1. Percent Change in Voting Turnout Rate in 2022 from 2018.")
+```
+```
