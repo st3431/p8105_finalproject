@@ -87,7 +87,7 @@ Finally, we merge 2018-2021 and 2022 datasets together. The resulting dataset is
 
 ```{r}
 abortion_bans <-
-  full_join(bans2018_df1, bans2022)%>% 
+  full_join(bans2018, bans2022)%>% 
   arrange(state, year) %>% 
   pivot_wider(
     names_from = year,
