@@ -30,7 +30,7 @@ scale_fill_discrete = scale_fill_viridis_d
 
 ### 2018-2021
 
-First, we read in the data on abortions laws restriction status by state 2018-2021 found [here](https://lawatlas.org/datasets/abortion-bans). The `bans2018_df1` is then cleaned and tidied to prepare for merging with other datasets. Note that states that had no abortion restrictions were intentionally coded as `.` by the original coder. These were replaced with `0` to reflect their status for further data analysis. 
+First, we read in the data on abortion laws restriction status by state 2018-2021 found [here](https://lawatlas.org/datasets/abortion-bans). The `bans2018` is then cleaned and tidied to prepare for merging with other datasets. Note that states that had no abortion restrictions in 2018 were intentionally coded as `.` by the original coder. These were replaced with `0` to reflect their status for further data analysis. A `year` and `state_abv` variables were created, and Washington DC was renamed to District of Columbia.
 
 
 ```{r}
@@ -53,7 +53,7 @@ bans2018
 
 ### 2022
 
-Next, we read in the 2022 data on abortions restrictions by state found [here](https://ballotpedia.org/Abortion_regulations_by_state). A `year` and `state_abv` variables were added, Washington DC was renamed, and `threshold` values were re-coded to match those in 2018-2021 dataset in preparation for the merge. Though this dataset was not availabe to download, we were able to scrape it from the source webpage. 
+Next, we read in the 2022 data on abortion restrictions by state found [here](https://ballotpedia.org/Abortion_regulations_by_state). A `year` and `state_abv` variables were added, and Washington DC was renamed District of Columbia to match the 2018 dataset. Though this dataset was not availabe to download, we were able to scrape it from the source webpage. 
 
 ```{r}
 bans_link <- "https://ballotpedia.org/Abortion_regulations_by_state"
@@ -83,7 +83,7 @@ bans2022
 
 ### Merge the tables
 
-Finally, we merge 2018-2021 and 2022 datasets together. The resulting dataset is saved as a CSV file.
+Finally, we merge 2018-2021 and 2022 datasets together. The resulting dataset is saved as a CSV file to merge with datasets on voter turnout and clinic abortion distances. 
 
 ```{r}
 abortion_bans <-
