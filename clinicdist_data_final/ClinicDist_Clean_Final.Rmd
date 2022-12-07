@@ -1,0 +1,45 @@
+---
+title: "Distance to Clinic by State"
+author: "Matt Untalan"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+```
+
+```{r}
+clinicdist =
+  read_csv("rawdata/2022.10.01_abortionaccess_countyxmonth.csv")
+
+countydist_change = 
+  subset(clinicdist, year == 2022 & (month == 6 | month == 7)) %>%
+  select(origin_county_name, origin_state, year, month, distance_origintodest) %>%
+  mutate(
+    month = month.abb[month]
+  ) %>%
+  pivot_wider(
+    names_from = "month", 
+    values_from = "distance_origintodest") %>%
+  mutate(
+     dist_change = Jul - Jun
+  )
+
+statedist_change = 
+  aggregate(dist_change ~ origin_state, countydist_change, mean)
+
+statedist_Jun =
+  aggregate(Jun ~ origin_state, countydist_change, mean)
+
+statedist_Jul =
+  aggregate(Jul ~ origin_state, countydist_change, mean)
+
+statedist = 
+  merge(statedist_Jun, statedist_Jul, by = c("origin_state")) %>%
+  merge(statedist_change, by = c("origin_state"))
+
+write.csv(statedist,"/clinicdist_data_final/statedist_final.csv", row.names = FALSE)
+```
+
+  
