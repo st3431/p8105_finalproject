@@ -46,8 +46,9 @@ voting =
   read_csv("Voting Turnout - Final.csv")
 ```
 
-```{r}
+```{r voting}
 voting %>%
+  drop_na() %>%
   ggplot(aes(x = state_abv, y = turnout_Rate_difference )) +
   geom_point() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
@@ -57,4 +58,17 @@ voting %>%
     y = "Rate Difference",
     caption = "Figure 1. Percent Change in Voting Turnout Rate in 2022 from 2018.")
 ```
+
+```{r}
+voting %>%
+  drop_na() %>%
+  ggplot(aes(x = state_abv, y = voting_eligible_difference )) +
+  geom_point() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(
+    title = "Voting Eligibility Rate in 2018 vs 2022",
+    x = "State",
+    y = "Difference",
+    caption = "Figure 2. Change in Voting Eligibility in 2022 from 2018.")
+    scale_y_continuous(breaks = c(-250000, 0, 250000, 500000, 750000))
 ```
