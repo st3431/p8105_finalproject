@@ -57,6 +57,7 @@ voting %>%
     x = "State",
     y = "Rate Difference",
     caption = "Figure 1. Percent Change in Voting Turnout Rate in 2022 from 2018.")
+
 ```
 
 ```{r}
@@ -71,4 +72,5 @@ voting %>%
     y = "Difference",
     caption = "Figure 2. Change in Voting Eligibility in 2022 from 2018.")
     scale_y_continuous(breaks = c(-250000, 0, 250000, 500000, 750000))
+    
 ```
