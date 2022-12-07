@@ -112,7 +112,7 @@ abortion_bans <-
     names_from = year,
     values_from = abstatus) %>% 
   rename(abstatus18 = '2018', abstatus22 = '2022') %>% 
-  write_csv("data/abortion_bans_final")
+  write_csv("data/abortion_bans_final.csv")
 ```
 
     ## Joining, by = c("state", "state_abv", "year", "abstatus")
