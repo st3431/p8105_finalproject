@@ -30,7 +30,7 @@ abortionvoting_df =
   rename(state = state.x)
 
 abortionvoting_df =
-  full_join(abortionvoting_df, statedist_df, by = "state_abv") %>% r
+  full_join(abortionvoting_df, statedist_df, by = "state_abv") %>% 
   rename(clinicdistance_jun = jun, clinicdistance_jul = jul)
   
 write.csv(abortionvoting_df,"Data/finalprojectfinaldataset.csv", row.names = FALSE)
