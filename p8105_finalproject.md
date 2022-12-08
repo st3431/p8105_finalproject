@@ -25,13 +25,9 @@ Our P8105 group will be using the 2022 data on voters found
 Abortion Facility [Database](https://osf.io/8dg7r/) and Abortion Laws by
 State using data from
 [2021](https://lawatlas.org/datasets/abortion-bans) and
-[2022](https://worldpopulationreview.com/state-rankings/abortion-laws-by-state).
-We will also be using the
-[KFF](https://www.kff.org/womens-health-policy/state-indicator/mandatory-waiting-periods/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D)
-data to identify the mandatory waiting periods and other restrictions
-related to abortion in each state. Specifically, we will be looking at
-panel distances to the nearest US abortion provider, and how this
-changes over time.
+[2022](https://ballotpedia.org/Abortion_regulations_by_state).
+Specifically, we will be looking at panel distances to the nearest US
+abortion provider, and how this changes over time.
 
 Our intended final product is to create a website which has
 visualizations showing the change in distances to an abortion clinic
@@ -46,23 +42,23 @@ coded differently among each of our data sets.
 
 ## Planned timeline
 
--   November 12: Submit a written proposal
--   November 15-18: Hold project review meeting
--   November 19: begin data cleaning and tidying
--   November 25: Begin analyses including EDA and visualizations, and
-    regression
--   December 1: Finalize code, disseminate results, begin report
--   December 5: Finalize report, create webpage, create video
--   December 9: Final review of deliverable
--   December 10: Submit written report, webpage and screencast, peer
-    assessment
+- November 12: Submit a written proposal
+- November 15-18: Hold project review meeting
+- November 19: begin data cleaning and tidying
+- November 25: Begin analyses including EDA and visualizations, and
+  regression
+- December 1: Finalize code, disseminate results, begin report
+- December 5: Finalize report, create webpage, create video
+- December 9: Final review of deliverable
+- December 10: Submit written report, webpage and screencast, peer
+  assessment
 
 ## Group members
 
 Our group consists of 5 members as follows:
 
--   Abby Feinberg asf2164
--   Mohammad Fouda mff2137
--   Ellen Park ep3045
--   Supraja Teki st3431
--   Matthew Untalan mmu2108
+- Abby Feinberg asf2164
+- Mohammad Fouda mff2137
+- Ellen Park ep3045
+- Supraja Teki st3431
+- Matthew Untalan mmu2108
