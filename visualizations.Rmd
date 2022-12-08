@@ -5,7 +5,7 @@ date: "2022-12-08"
 output: html_document
 ---
 
-```{r}
+```{r merge document}
 library(tidyverse) 
 library(tidyr)
 abortionbans_df = 
@@ -50,7 +50,7 @@ scale_fill_discrete = scale_fill_viridis_d
 ```
 
 
-```{r voting}
+```{r figure 1}
 abortionvoting_df %>%
   drop_na() %>%
   ggplot(aes(x = state_abv)) +
@@ -62,11 +62,23 @@ abortionvoting_df %>%
     x = "State",
     y = "Rate Difference",
     caption = "Figure 1. Voting Turnout Rate in 2018 and 2022.")
-
-png(file = "turnout.png")
 ```
 
-```{r}
+```{r figure 2}
+abortionvoting_df %>%
+  drop_na() %>%
+  ggplot(aes(x = state_abv)) +
+    geom_point(aes(y = turnout_estimate2018, colour = "2018")) +
+    geom_point(aes(y = turnout_estimate2022, colour = "2022")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(
+    title = "Turnout Estimate Number in 2018 vs 2022",
+    x = "State",
+    y = "Rate Difference",
+    caption = "Figure 2. Turnout Estimate Number in 2018 and 2022.")
+```
+
+```{r figure 3}
 abortionvoting_df %>%
   drop_na() %>%
   ggplot(aes(x = state_abv)) +
@@ -77,13 +89,25 @@ abortionvoting_df %>%
     title = "Voting Eligibility Population in 2018 vs 2022",
     x = "State",
     y = "Difference",
-    caption = "Figure 2. Voting Eligibility Population in 2018 and 2022.")
-    scale_y_continuous(breaks = c(-250000, 0, 250000, 500000, 750000))
-    
-png(file = "eligiblity.png")  
+    caption = "Figure 3. Voting Eligibility Population in 2018 and 2022.")
+
+```
+```{r figure 4}
+abortionvoting_df %>%
+  drop_na() %>%
+  ggplot(aes(x = state_abv)) +
+    geom_point(aes(y = voting_age_pop2018, colour = "2018")) +
+    geom_point(aes(y = voting_age_pop2022, colour = "2022")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(
+    title = "Voting Age Population in 2018 vs 2022",
+    x = "State",
+    y = "Difference",
+    caption = "Figure 4. Voting Age Population in 2018 and 2022.")
+
 ```
 
-```{r distance}
+```{r figure 5}
 abortionvoting_df %>%
   drop_na() %>%
   ggplot(aes(x = state_abv)) +
@@ -94,7 +118,6 @@ abortionvoting_df %>%
     title = "Distance Changed from June to July, 2022",
     x = "State",
     y = "Distance",
-    caption = "Figure 3. Average Distance from an Abortion Clinic from June to July after Overturn of Roe vs. Wade.")
+    caption = "Figure 5. Average Distance from an Abortion Clinic from June to July after Overturn of Roe vs. Wade.")
 
-png(file = "distance.png")
 ```
