@@ -1,23 +1,36 @@
 ---
 title: "visualizations"
 author: "Ellen Park"
-date: "2022-12-06"
+date: "2022-12-08"
 output: html_document
 ---
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-	echo = TRUE,
-	message = FALSE,
-	warning = FALSE,
-	fig.height = 6,
-	out.width = "90%",
-	dpi = 200
-)
-setwd("~/COLUMBIA/Fall 2022/DATA SCIENCE/p8105_finalproject/Data")
+```{r}
+library(tidyverse) 
+library(tidyr)
+abortionbans_df = 
+  read.csv("Data/abortion_bans_final.csv") %>% 
+  janitor::clean_names() 
+votingturnout_df = 
+  read.csv("Voting Turnout - Final.csv") %>% 
+  janitor::clean_names() %>% 
+  filter(!row_number() %in% c(1))
+statedist_df = 
+  read.csv("clinicdist_data_final/statedist_final.csv") %>% 
+  janitor::clean_names() %>% 
+  rename(state_abv = origin_state)
+abortionvoting_df =
+  full_join(abortionbans_df, votingturnout_df, by = "state_abv") %>% 
+  select(-state.y) %>% 
+  rename(state = state.x)
+abortionvoting_df =
+  full_join(abortionvoting_df, statedist_df, by = "state_abv") %>% 
+  rename(clinicdistance_jun = jun, clinicdistance_jul = jul)
+  
+write.csv(abortionvoting_df,"Data/finalprojectfinaldataset.csv", row.names = FALSE)
 ```
 
-
+```{r visualizations}
 ```{r}
 library(tidyverse)
 library(ggplot2)
@@ -39,17 +52,20 @@ scale_fill_discrete = scale_fill_viridis_d
 
 ```{r data}
 abortion_bans = 
-  read_csv("abortion_bans_final.csv")
+  read_csv("Data/abortion_bans_final.csv")
 abortion_laws = 
   read_csv("state_abortion_laws2022.csv")
 voting =
   read_csv("Voting Turnout - Final.csv")
+state_dist = 
+  read_csv("statedist.csv")
 ```
 
 ```{r voting}
 voting %>%
   drop_na() %>%
-  ggplot(aes(x = state_abv, y = turnout_Rate_difference )) +
+  ggplot(aes(x = state_abv, y = turnoutRate2018, color = "green")) +
+  ggplot(aes(x = state_abv, y = turnoutRate2022, color = "blue" )) +
   geom_point() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   labs(
@@ -63,7 +79,7 @@ voting %>%
 ```{r}
 voting %>%
   drop_na() %>%
-  ggplot(aes(x = state_abv, y = voting_eligible_difference )) +
+  ggplot(aes(x = state_abv, y = voting_eligible_pop2018, voting_eligible_pop2022 )) +
   geom_point() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   labs(
@@ -73,4 +89,16 @@ voting %>%
     caption = "Figure 2. Change in Voting Eligibility in 2022 from 2018.")
     scale_y_continuous(breaks = c(-250000, 0, 250000, 500000, 750000))
     
+```
+```{r distance}
+state_dist %>%
+  drop_na() %>%
+  ggplot(aes(x = origin_state, y = Jun, Jul )) +
+  geom_point() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(
+    title = "Distance Changed from June to July, 2022",
+    x = "State",
+    y = "Distance",
+    caption = "Figure 3. Average Distance from an Abortion Clinic from June to July after Overturn of Roe vs. Wade.")
 ```
