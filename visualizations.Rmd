@@ -30,7 +30,6 @@ abortionvoting_df =
 write.csv(abortionvoting_df,"Data/finalprojectfinaldataset.csv", row.names = FALSE)
 ```
 
-```{r visualizations}
 ```{r}
 library(tidyverse)
 library(ggplot2)
@@ -50,51 +49,42 @@ scale_colour_discrete = scale_colour_viridis_d
 scale_fill_discrete = scale_fill_viridis_d
 ```
 
-```{r data}
-abortion_bans = 
-  read_csv("Data/abortion_bans_final.csv")
-abortion_laws = 
-  read_csv("state_abortion_laws2022.csv")
-voting =
-  read_csv("Voting Turnout - Final.csv")
-state_dist = 
-  read_csv("statedist.csv")
-```
 
 ```{r voting}
-voting %>%
+abortionvoting_df %>%
   drop_na() %>%
-  ggplot(aes(x = state_abv, y = turnoutRate2018, color = "green")) +
-  ggplot(aes(x = state_abv, y = turnoutRate2022, color = "blue" )) +
-  geom_point() +
+  ggplot(aes(x = state_abv)) +
+    geom_point(aes(y = turnout_rate2018, colour = "2018")) +
+    geom_point(aes(y = turnout_rate2022, colour = "2022")) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   labs(
     title = "Voting Turnout Rate in 2018 vs 2022",
     x = "State",
     y = "Rate Difference",
-    caption = "Figure 1. Percent Change in Voting Turnout Rate in 2022 from 2018.")
-
+    caption = "Figure 1. Voting Turnout Rate in 2018 and 2022.")
 ```
 
 ```{r}
-voting %>%
+abortionvoting_df %>%
   drop_na() %>%
-  ggplot(aes(x = state_abv, y = voting_eligible_pop2018, voting_eligible_pop2022 )) +
-  geom_point() +
+  ggplot(aes(x = state_abv)) +
+    geom_point(aes(y = voting_eligible_pop2018, colour = "2018")) +
+    geom_point(aes(y = voting_eligible_pop2022, colour = "2022")) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   labs(
-    title = "Voting Eligibility Rate in 2018 vs 2022",
+    title = "Voting Eligibility Population in 2018 vs 2022",
     x = "State",
     y = "Difference",
-    caption = "Figure 2. Change in Voting Eligibility in 2022 from 2018.")
+    caption = "Figure 2. Voting Eligibility Population in 2018 and 2022.")
     scale_y_continuous(breaks = c(-250000, 0, 250000, 500000, 750000))
     
 ```
 ```{r distance}
-state_dist %>%
+abortionvoting_df %>%
   drop_na() %>%
-  ggplot(aes(x = origin_state, y = Jun, Jul )) +
-  geom_point() +
+  ggplot(aes(x = state_abv)) +
+  geom_point(aes(y = clinicdistance_jun, colour = "June")) +
+  geom_point(aes(y = clinicdistance_jul, colour = "July")) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   labs(
     title = "Distance Changed from June to July, 2022",
